@@ -1,31 +1,42 @@
 //
-//  JRHomeViewController.m
+//  JRDetailsViewController.m
 //  JRLinkageEffect
 //
 //  Created by hqtech on 2018/4/9.
 //  Copyright © 2018年 tulip. All rights reserved.
 //
 
-#import "JRHomeViewController.h"
 #import "JRDetailsViewController.h"
 
-@interface JRHomeViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface JRDetailsViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation JRHomeViewController
+@implementation JRDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.navigationItem.title = @"首页";
+    [self setNav];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc] init];
+}
+
+- (void)setNav {
+    
+    self.navigationItem.title = @"详情";
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_white"] style:UIBarButtonItemStylePlain target:self action:@selector(goback)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+}
+- (void)goback {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -52,8 +63,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    JRDetailsViewController *detailsVC = [[JRDetailsViewController alloc] initWithNibName:@"JRDetailsViewController" bundle:nil];
-    [self.navigationController pushViewController:detailsVC animated:YES];
+    
 }
 
 @end

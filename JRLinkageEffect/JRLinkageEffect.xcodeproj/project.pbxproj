@@ -17,6 +17,8 @@
 		650599D7207B4CC8006A829A /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599D5207B4CC8006A829A /* UIColor+HEX.m */; };
 		650599DB207B4D0B006A829A /* JRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599D9207B4D0B006A829A /* JRHomeViewController.m */; };
 		650599DC207B4D0B006A829A /* JRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650599DA207B4D0B006A829A /* JRHomeViewController.xib */; };
+		650599E0207B53E7006A829A /* JRDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599DE207B53E7006A829A /* JRDetailsViewController.m */; };
+		650599E1207B53E7006A829A /* JRDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650599DF207B53E7006A829A /* JRDetailsViewController.xib */; };
 		CE307B3DEB8608DD083AA61A /* libPods-JRLinkageEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6069C11779C8E2E2B9ED506E /* libPods-JRLinkageEffect.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,9 @@
 		650599D8207B4D0B006A829A /* JRHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRHomeViewController.h; sourceTree = "<group>"; };
 		650599D9207B4D0B006A829A /* JRHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRHomeViewController.m; sourceTree = "<group>"; };
 		650599DA207B4D0B006A829A /* JRHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRHomeViewController.xib; sourceTree = "<group>"; };
+		650599DD207B53E7006A829A /* JRDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDetailsViewController.h; sourceTree = "<group>"; };
+		650599DE207B53E7006A829A /* JRDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDetailsViewController.m; sourceTree = "<group>"; };
+		650599DF207B53E7006A829A /* JRDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRDetailsViewController.xib; sourceTree = "<group>"; };
 		AC65A55F2AAA1CD41B158D15 /* Pods-JRLinkageEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRLinkageEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +129,9 @@
 				650599D8207B4D0B006A829A /* JRHomeViewController.h */,
 				650599D9207B4D0B006A829A /* JRHomeViewController.m */,
 				650599DA207B4D0B006A829A /* JRHomeViewController.xib */,
+				650599DD207B53E7006A829A /* JRDetailsViewController.h */,
+				650599DE207B53E7006A829A /* JRDetailsViewController.m */,
+				650599DF207B53E7006A829A /* JRDetailsViewController.xib */,
 				650599A3207B4945006A829A /* Main.storyboard */,
 				650599A6207B494A006A829A /* Assets.xcassets */,
 				650599A8207B494A006A829A /* LaunchScreen.storyboard */,
@@ -309,6 +317,7 @@
 			files = (
 				650599AA207B494A006A829A /* LaunchScreen.storyboard in Resources */,
 				650599DC207B4D0B006A829A /* JRHomeViewController.xib in Resources */,
+				650599E1207B53E7006A829A /* JRDetailsViewController.xib in Resources */,
 				650599A7207B494A006A829A /* Assets.xcassets in Resources */,
 				650599A5207B4945006A829A /* Main.storyboard in Resources */,
 			);
@@ -390,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				650599D7207B4CC8006A829A /* UIColor+HEX.m in Sources */,
+				650599E0207B53E7006A829A /* JRDetailsViewController.m in Sources */,
 				650599DB207B4D0B006A829A /* JRHomeViewController.m in Sources */,
 				650599AD207B494A006A829A /* main.m in Sources */,
 				6505999F207B4944006A829A /* AppDelegate.m in Sources */,
