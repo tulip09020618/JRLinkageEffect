@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6505999F207B4944006A829A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505999E207B4944006A829A /* AppDelegate.m */; };
+		650599A2207B4945006A829A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599A1207B4945006A829A /* ViewController.m */; };
+		650599A5207B4945006A829A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650599A3207B4945006A829A /* Main.storyboard */; };
+		650599A7207B494A006A829A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650599A6207B494A006A829A /* Assets.xcassets */; };
+		650599AA207B494A006A829A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650599A8207B494A006A829A /* LaunchScreen.storyboard */; };
+		650599AD207B494A006A829A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599AC207B494A006A829A /* main.m */; };
+		650599B7207B494B006A829A /* JRLinkageEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599B6207B494B006A829A /* JRLinkageEffectTests.m */; };
+		650599C2207B494B006A829A /* JRLinkageEffectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599C1207B494B006A829A /* JRLinkageEffectUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		650599B3207B494B006A829A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65059992207B4944006A829A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65059999207B4944006A829A;
+			remoteInfo = JRLinkageEffect;
+		};
+		650599BE207B494B006A829A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65059992207B4944006A829A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65059999207B4944006A829A;
+			remoteInfo = JRLinkageEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6505999A207B4944006A829A /* JRLinkageEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRLinkageEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6505999D207B4944006A829A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6505999E207B4944006A829A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		650599A0207B4944006A829A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		650599A1207B4945006A829A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		650599A4207B4945006A829A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		650599A6207B494A006A829A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		650599A9207B494A006A829A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		650599AB207B494A006A829A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650599AC207B494A006A829A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		650599B2207B494B006A829A /* JRLinkageEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRLinkageEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		650599B6207B494B006A829A /* JRLinkageEffectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLinkageEffectTests.m; sourceTree = "<group>"; };
+		650599B8207B494B006A829A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650599BD207B494B006A829A /* JRLinkageEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRLinkageEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		650599C1207B494B006A829A /* JRLinkageEffectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLinkageEffectUITests.m; sourceTree = "<group>"; };
+		650599C3207B494B006A829A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65059997207B4944006A829A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599AF207B494B006A829A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599BA207B494B006A829A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65059991207B4944006A829A = {
+			isa = PBXGroup;
+			children = (
+				6505999C207B4944006A829A /* JRLinkageEffect */,
+				650599B5207B494B006A829A /* JRLinkageEffectTests */,
+				650599C0207B494B006A829A /* JRLinkageEffectUITests */,
+				6505999B207B4944006A829A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6505999B207B4944006A829A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6505999A207B4944006A829A /* JRLinkageEffect.app */,
+				650599B2207B494B006A829A /* JRLinkageEffectTests.xctest */,
+				650599BD207B494B006A829A /* JRLinkageEffectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6505999C207B4944006A829A /* JRLinkageEffect */ = {
+			isa = PBXGroup;
+			children = (
+				6505999D207B4944006A829A /* AppDelegate.h */,
+				6505999E207B4944006A829A /* AppDelegate.m */,
+				650599A0207B4944006A829A /* ViewController.h */,
+				650599A1207B4945006A829A /* ViewController.m */,
+				650599A3207B4945006A829A /* Main.storyboard */,
+				650599A6207B494A006A829A /* Assets.xcassets */,
+				650599A8207B494A006A829A /* LaunchScreen.storyboard */,
+				650599AB207B494A006A829A /* Info.plist */,
+				650599AC207B494A006A829A /* main.m */,
+			);
+			path = JRLinkageEffect;
+			sourceTree = "<group>";
+		};
+		650599B5207B494B006A829A /* JRLinkageEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				650599B6207B494B006A829A /* JRLinkageEffectTests.m */,
+				650599B8207B494B006A829A /* Info.plist */,
+			);
+			path = JRLinkageEffectTests;
+			sourceTree = "<group>";
+		};
+		650599C0207B494B006A829A /* JRLinkageEffectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				650599C1207B494B006A829A /* JRLinkageEffectUITests.m */,
+				650599C3207B494B006A829A /* Info.plist */,
+			);
+			path = JRLinkageEffectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65059999207B4944006A829A /* JRLinkageEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650599C6207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffect" */;
+			buildPhases = (
+				65059996207B4944006A829A /* Sources */,
+				65059997207B4944006A829A /* Frameworks */,
+				65059998207B4944006A829A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRLinkageEffect;
+			productName = JRLinkageEffect;
+			productReference = 6505999A207B4944006A829A /* JRLinkageEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		650599B1207B494B006A829A /* JRLinkageEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650599C9207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffectTests" */;
+			buildPhases = (
+				650599AE207B494B006A829A /* Sources */,
+				650599AF207B494B006A829A /* Frameworks */,
+				650599B0207B494B006A829A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650599B4207B494B006A829A /* PBXTargetDependency */,
+			);
+			name = JRLinkageEffectTests;
+			productName = JRLinkageEffectTests;
+			productReference = 650599B2207B494B006A829A /* JRLinkageEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		650599BC207B494B006A829A /* JRLinkageEffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650599CC207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffectUITests" */;
+			buildPhases = (
+				650599B9207B494B006A829A /* Sources */,
+				650599BA207B494B006A829A /* Frameworks */,
+				650599BB207B494B006A829A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650599BF207B494B006A829A /* PBXTargetDependency */,
+			);
+			name = JRLinkageEffectUITests;
+			productName = JRLinkageEffectUITests;
+			productReference = 650599BD207B494B006A829A /* JRLinkageEffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65059992207B4944006A829A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = tulip;
+				TargetAttributes = {
+					65059999207B4944006A829A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					650599B1207B494B006A829A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 65059999207B4944006A829A;
+					};
+					650599BC207B494B006A829A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 65059999207B4944006A829A;
+					};
+				};
+			};
+			buildConfigurationList = 65059995207B4944006A829A /* Build configuration list for PBXProject "JRLinkageEffect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65059991207B4944006A829A;
+			productRefGroup = 6505999B207B4944006A829A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65059999207B4944006A829A /* JRLinkageEffect */,
+				650599B1207B494B006A829A /* JRLinkageEffectTests */,
+				650599BC207B494B006A829A /* JRLinkageEffectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65059998207B4944006A829A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650599AA207B494A006A829A /* LaunchScreen.storyboard in Resources */,
+				650599A7207B494A006A829A /* Assets.xcassets in Resources */,
+				650599A5207B4945006A829A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599B0207B494B006A829A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599BB207B494B006A829A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65059996207B4944006A829A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650599A2207B4945006A829A /* ViewController.m in Sources */,
+				650599AD207B494A006A829A /* main.m in Sources */,
+				6505999F207B4944006A829A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599AE207B494B006A829A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650599B7207B494B006A829A /* JRLinkageEffectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650599B9207B494B006A829A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650599C2207B494B006A829A /* JRLinkageEffectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		650599B4207B494B006A829A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65059999207B4944006A829A /* JRLinkageEffect */;
+			targetProxy = 650599B3207B494B006A829A /* PBXContainerItemProxy */;
+		};
+		650599BF207B494B006A829A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65059999207B4944006A829A /* JRLinkageEffect */;
+			targetProxy = 650599BE207B494B006A829A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		650599A3207B4945006A829A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650599A4207B4945006A829A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		650599A8207B494A006A829A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650599A9207B494A006A829A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		650599C4207B494B006A829A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		650599C5207B494B006A829A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		650599C7207B494B006A829A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		650599C8207B494B006A829A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		650599CA207B494B006A829A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRLinkageEffect.app/JRLinkageEffect";
+			};
+			name = Debug;
+		};
+		650599CB207B494B006A829A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JRLinkageEffect.app/JRLinkageEffect";
+			};
+			name = Release;
+		};
+		650599CD207B494B006A829A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JRLinkageEffect;
+			};
+			name = Debug;
+		};
+		650599CE207B494B006A829A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K57F93BM5Q;
+				INFOPLIST_FILE = JRLinkageEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JRLinkageEffect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65059995207B4944006A829A /* Build configuration list for PBXProject "JRLinkageEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650599C4207B494B006A829A /* Debug */,
+				650599C5207B494B006A829A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650599C6207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650599C7207B494B006A829A /* Debug */,
+				650599C8207B494B006A829A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650599C9207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650599CA207B494B006A829A /* Debug */,
+				650599CB207B494B006A829A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650599CC207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650599CD207B494B006A829A /* Debug */,
+				650599CE207B494B006A829A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65059992207B4944006A829A /* Project object */;
+}
