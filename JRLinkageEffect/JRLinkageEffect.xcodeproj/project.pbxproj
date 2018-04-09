@@ -15,6 +15,7 @@
 		650599AD207B494A006A829A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599AC207B494A006A829A /* main.m */; };
 		650599B7207B494B006A829A /* JRLinkageEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599B6207B494B006A829A /* JRLinkageEffectTests.m */; };
 		650599C2207B494B006A829A /* JRLinkageEffectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599C1207B494B006A829A /* JRLinkageEffectUITests.m */; };
+		CE307B3DEB8608DD083AA61A /* libPods-JRLinkageEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6069C11779C8E2E2B9ED506E /* libPods-JRLinkageEffect.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D01D7E57C1266B0649B1EB9 /* Pods-JRLinkageEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRLinkageEffect.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect.release.xcconfig"; sourceTree = "<group>"; };
+		6069C11779C8E2E2B9ED506E /* libPods-JRLinkageEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRLinkageEffect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6505999A207B4944006A829A /* JRLinkageEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRLinkageEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6505999D207B4944006A829A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6505999E207B4944006A829A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		650599BD207B494B006A829A /* JRLinkageEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRLinkageEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		650599C1207B494B006A829A /* JRLinkageEffectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRLinkageEffectUITests.m; sourceTree = "<group>"; };
 		650599C3207B494B006A829A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC65A55F2AAA1CD41B158D15 /* Pods-JRLinkageEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRLinkageEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE307B3DEB8608DD083AA61A /* libPods-JRLinkageEffect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				650599B5207B494B006A829A /* JRLinkageEffectTests */,
 				650599C0207B494B006A829A /* JRLinkageEffectUITests */,
 				6505999B207B4944006A829A /* Products */,
+				7119BF429CB32C7DF55CE932 /* Pods */,
+				7967C04DE648F6FE70F53F27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = JRLinkageEffectUITests;
 			sourceTree = "<group>";
 		};
+		7119BF429CB32C7DF55CE932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC65A55F2AAA1CD41B158D15 /* Pods-JRLinkageEffect.debug.xcconfig */,
+				1D01D7E57C1266B0649B1EB9 /* Pods-JRLinkageEffect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7967C04DE648F6FE70F53F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6069C11779C8E2E2B9ED506E /* libPods-JRLinkageEffect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 650599C6207B494B006A829A /* Build configuration list for PBXNativeTarget "JRLinkageEffect" */;
 			buildPhases = (
+				677FD3AD901E4CE524D5B8FC /* [CP] Check Pods Manifest.lock */,
 				65059996207B4944006A829A /* Sources */,
 				65059997207B4944006A829A /* Frameworks */,
 				65059998207B4944006A829A /* Resources */,
+				147F84FF51DCD9DD78EF6A45 /* [CP] Embed Pods Frameworks */,
+				6B2D8A6AD1E4FF78322B7CC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147F84FF51DCD9DD78EF6A45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677FD3AD901E4CE524D5B8FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRLinkageEffect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2D8A6AD1E4FF78322B7CC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65059996207B4944006A829A /* Sources */ = {
@@ -431,15 +512,13 @@
 		};
 		650599C7207B494B006A829A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC65A55F2AAA1CD41B158D15 /* Pods-JRLinkageEffect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffect/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,15 +527,13 @@
 		};
 		650599C8207B494B006A829A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D01D7E57C1266B0649B1EB9 /* Pods-JRLinkageEffect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffect/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,11 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,11 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,11 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
 				INFOPLIST_FILE = JRLinkageEffectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRLinkageEffectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
