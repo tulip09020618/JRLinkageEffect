@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JRDetailsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Egz-Ng-MWt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第几个视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu1-eV-wFG">
+                        <rect key="frame" x="116.5" y="89" width="87" height="21"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="0.7497859589041096" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qu1-eV-wFG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6iq-AJ-t97"/>
+                    <constraint firstAttribute="trailing" secondItem="Egz-Ng-MWt" secondAttribute="trailing" id="Lx5-3O-b94"/>
+                    <constraint firstAttribute="bottom" secondItem="Egz-Ng-MWt" secondAttribute="bottom" id="Tar-Qu-8ct"/>
+                    <constraint firstItem="Qu1-eV-wFG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ni6-xj-Tq3"/>
+                    <constraint firstItem="Egz-Ng-MWt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oaQ-0g-BYW"/>
+                    <constraint firstItem="Egz-Ng-MWt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uFA-Jd-VGo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="indexLabel" destination="Qu1-eV-wFG" id="B0o-Ev-ova"/>
+                <outlet property="videoThumbImgView" destination="Egz-Ng-MWt" id="3hg-kb-eIa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

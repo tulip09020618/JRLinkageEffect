@@ -19,6 +19,13 @@
 		650599DC207B4D0B006A829A /* JRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650599DA207B4D0B006A829A /* JRHomeViewController.xib */; };
 		650599E0207B53E7006A829A /* JRDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599DE207B53E7006A829A /* JRDetailsViewController.m */; };
 		650599E1207B53E7006A829A /* JRDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650599DF207B53E7006A829A /* JRDetailsViewController.xib */; };
+		650599E5207B59B3006A829A /* JRDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 650599E3207B59B3006A829A /* JRDetailsTableViewCell.m */; };
+		650599E6207B59B3006A829A /* JRDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650599E4207B59B3006A829A /* JRDetailsTableViewCell.xib */; };
+		650599ED207B62C8006A829A /* video4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650599E8207B62C8006A829A /* video4.jpg */; };
+		650599EE207B62C8006A829A /* video3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650599E9207B62C8006A829A /* video3.jpg */; };
+		650599EF207B62C8006A829A /* video0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650599EA207B62C8006A829A /* video0.jpg */; };
+		650599F0207B62C8006A829A /* video1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650599EB207B62C8006A829A /* video1.jpg */; };
+		650599F1207B62C8006A829A /* video2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650599EC207B62C8006A829A /* video2.jpg */; };
 		CE307B3DEB8608DD083AA61A /* libPods-JRLinkageEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6069C11779C8E2E2B9ED506E /* libPods-JRLinkageEffect.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +73,14 @@
 		650599DD207B53E7006A829A /* JRDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDetailsViewController.h; sourceTree = "<group>"; };
 		650599DE207B53E7006A829A /* JRDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDetailsViewController.m; sourceTree = "<group>"; };
 		650599DF207B53E7006A829A /* JRDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRDetailsViewController.xib; sourceTree = "<group>"; };
+		650599E2207B59B3006A829A /* JRDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDetailsTableViewCell.h; sourceTree = "<group>"; };
+		650599E3207B59B3006A829A /* JRDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDetailsTableViewCell.m; sourceTree = "<group>"; };
+		650599E4207B59B3006A829A /* JRDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		650599E8207B62C8006A829A /* video4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video4.jpg; sourceTree = "<group>"; };
+		650599E9207B62C8006A829A /* video3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video3.jpg; sourceTree = "<group>"; };
+		650599EA207B62C8006A829A /* video0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video0.jpg; sourceTree = "<group>"; };
+		650599EB207B62C8006A829A /* video1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video1.jpg; sourceTree = "<group>"; };
+		650599EC207B62C8006A829A /* video2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video2.jpg; sourceTree = "<group>"; };
 		AC65A55F2AAA1CD41B158D15 /* Pods-JRLinkageEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRLinkageEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRLinkageEffect/Pods-JRLinkageEffect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +135,7 @@
 		6505999C207B4944006A829A /* JRLinkageEffect */ = {
 			isa = PBXGroup;
 			children = (
+				650599E7207B62B2006A829A /* Resources */,
 				650599D2207B4BC0006A829A /* Utils */,
 				650599CF207B4B9F006A829A /* Model */,
 				650599D0207B4BAB006A829A /* View */,
@@ -169,6 +185,9 @@
 		650599D0207B4BAB006A829A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				650599E2207B59B3006A829A /* JRDetailsTableViewCell.h */,
+				650599E3207B59B3006A829A /* JRDetailsTableViewCell.m */,
+				650599E4207B59B3006A829A /* JRDetailsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +208,18 @@
 				650599D5207B4CC8006A829A /* UIColor+HEX.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		650599E7207B62B2006A829A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				650599EA207B62C8006A829A /* video0.jpg */,
+				650599EB207B62C8006A829A /* video1.jpg */,
+				650599EC207B62C8006A829A /* video2.jpg */,
+				650599E9207B62C8006A829A /* video3.jpg */,
+				650599E8207B62C8006A829A /* video4.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7119BF429CB32C7DF55CE932 /* Pods */ = {
@@ -315,8 +346,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650599F1207B62C8006A829A /* video2.jpg in Resources */,
+				650599E6207B59B3006A829A /* JRDetailsTableViewCell.xib in Resources */,
+				650599EF207B62C8006A829A /* video0.jpg in Resources */,
 				650599AA207B494A006A829A /* LaunchScreen.storyboard in Resources */,
+				650599F0207B62C8006A829A /* video1.jpg in Resources */,
 				650599DC207B4D0B006A829A /* JRHomeViewController.xib in Resources */,
+				650599EE207B62C8006A829A /* video3.jpg in Resources */,
+				650599ED207B62C8006A829A /* video4.jpg in Resources */,
 				650599E1207B53E7006A829A /* JRDetailsViewController.xib in Resources */,
 				650599A7207B494A006A829A /* Assets.xcassets in Resources */,
 				650599A5207B4945006A829A /* Main.storyboard in Resources */,
@@ -398,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650599E5207B59B3006A829A /* JRDetailsTableViewCell.m in Sources */,
 				650599D7207B4CC8006A829A /* UIColor+HEX.m in Sources */,
 				650599E0207B53E7006A829A /* JRDetailsViewController.m in Sources */,
 				650599DB207B4D0B006A829A /* JRHomeViewController.m in Sources */,

@@ -52,7 +52,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    NSMutableArray *videos = [NSMutableArray array];
+    for (NSInteger i = 0; i < 20; i ++) {
+        [videos addObject:@"测试数据"];
+    }
+    
     JRDetailsViewController *detailsVC = [[JRDetailsViewController alloc] initWithNibName:@"JRDetailsViewController" bundle:nil];
+    detailsVC.videos = videos;
+    detailsVC.index = indexPath.row;
+    detailsVC.footerState = MJRefreshStateIdle;
+    detailsVC.page = 2;
     [self.navigationController pushViewController:detailsVC animated:YES];
 }
 
