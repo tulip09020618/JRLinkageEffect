@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JRHomeViewController.h
 //  JRLinkageEffect
 //
 //  Created by hqtech on 2018/4/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JRHomeViewController : UIViewController
 
 @end
-
