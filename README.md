@@ -17,6 +17,7 @@ UITableView和UIScrollView的联动效果演示程序
 ![@分页关键代码 | center | 375x0](./分页效果实现代码.png)
 - 加载数据：为UITableView和UIScrollView同时添加刷新控件，并设置UIScrollView的刷新控件字体颜色为透明色。使用KVO监听UITableView和UIScrollView的刷新控件状态的变化，如果其中有一个发生变化，就更新另一个的状态，使UITableView和UIScrollView的刷新控件状态保持一致。此外还要监听UITableView的contentSize，据此变化去更新UIScrollView的contentSize。(注：这里使用的刷新控件为MJRefresh)
 - 加载数据关键代码：
+
 ![@使用KVO监听 | center | 375x0](./屏幕快照 2018-04-10 上午9.22.07.png)
 
 ![@监听到变化的处理 | center | 375x0](./屏幕快照 2018-04-10 上午9.24.30.png)
