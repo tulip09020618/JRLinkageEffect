@@ -1,4 +1,4 @@
-# JRLinkageEffect
+# JRLinkageEffect(联动效果)
 UITableView和UIScrollView的联动效果演示程序
 
 #### 框架分析：
