@@ -4,7 +4,7 @@ UITableView和UIScrollView的联动效果演示程序
 #### 框架分析：
 - 下边是一个视频列表(UITableView)
 - 上边是一个半透明的滚动视图(UIScrollView)
-![@联动框架 | center | 375x0](./img/编辑1.png)
+![@联动框架 | center | 375x0](./img/编辑1.png “联动框架”)
 
 #### 实现思路：
 - 联动效果：滚动UIScrollView时，UITableView随之滚动；滚动UITableView时，UIScrollView随之滚动。
