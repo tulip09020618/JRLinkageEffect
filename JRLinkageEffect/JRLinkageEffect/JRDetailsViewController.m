@@ -170,7 +170,7 @@ static NSString *cellID = @"Details";
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark 添加刷新控件
+#pragma mark - 添加刷新控件
 - (void)addMJRefresh {
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
     MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
