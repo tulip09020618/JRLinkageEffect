@@ -82,12 +82,11 @@ static NSString *cellID = @"Details";
     // 44：导航栏高度(未算状态栏高度) 为了防止最后一个视频全屏播放时，隐藏状态栏对视频位置的影响
     [self setListBottomSpaceHeight:NO];
     
-    // KVO监听tableView的contentSize变化
-    [self.tableView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
-    
     // 初始化下拉刷新控件
     [self addMJRefresh];
     
+    // KVO监听tableView的contentSize变化
+    [self.tableView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     // KVO监听scrollView的刷新状态变化
     [self.scrollView.mj_header addObserver:self forKeyPath:@"state" options:NSKeyValueObservingOptionNew context:nil];
     [self.scrollView.mj_footer addObserver:self forKeyPath:@"state" options:NSKeyValueObservingOptionNew context:nil];
@@ -146,18 +145,6 @@ static NSString *cellID = @"Details";
     NSLog(@"%@ dealloc",[self class]);
 }
 
-#pragma mark - KVO监听刷新控件的变化
-- (void)addObserversToObj:(MJRefreshComponent *)refreshComponent
-{
-    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-    [refreshComponent.scrollView addObserver:refreshComponent forKeyPath:MJRefreshKeyPathContentOffset options:options context:nil];
-}
-
-- (void)removeObserversWithObj:(MJRefreshComponent *)refreshComponent
-{
-    [refreshComponent.superview removeObserver:refreshComponent forKeyPath:MJRefreshKeyPathContentOffset];
-}
-
 - (void)setNav {
     
     self.navigationItem.title = @"详情";
@@ -174,8 +161,6 @@ static NSString *cellID = @"Details";
 - (void)addMJRefresh {
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
     MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
-    // 设置自动切换透明度(在导航栏下面自动隐藏)
-    //    refreshHeader.automaticallyChangeAlpha = YES;
     // 隐藏时间
     refreshHeader.lastUpdatedTimeLabel.hidden = YES;
     // 设置header
@@ -203,8 +188,6 @@ static NSString *cellID = @"Details";
 - (void)addMJRefreshToScrollView {
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
     MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewDataWithScroll)];
-    // 设置自动切换透明度(在导航栏下面自动隐藏)
-    //    refreshHeader.automaticallyChangeAlpha = YES;
     // 隐藏时间
     refreshHeader.lastUpdatedTimeLabel.hidden = YES;
     // 设置字体颜色
@@ -249,7 +232,7 @@ static NSString *cellID = @"Details";
 - (void)loadMoreDataWithScroll {
 }
 
-#pragma mark 获取我参与的视频列表
+#pragma mark 模拟获取视频数据
 - (void)getMineParticipationalVideo:(NSInteger)page {
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -306,7 +289,7 @@ static NSString *cellID = @"Details";
 
     JRDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
-    NSString *imgName = [NSString stringWithFormat:@"video%ld.jpg", indexPath.row % 5];
+    NSString *imgName = [NSString stringWithFormat:@"video%ld.jpg", (long)indexPath.row % 5];
     cell.imgName = imgName;
     
     cell.index = indexPath.row;
@@ -336,11 +319,11 @@ static NSString *cellID = @"Details";
     }
     
     // 减速停止
-    //    NSLog(@"停止滚动1:%f", scrollView.contentOffset.y);
     // 修复位置
     [self updateTableViewContentOffSet];
 }
 
+#pragma mark 已经结束拖动
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     // 结束拖动
     if (scrollView == self.scrollView) {
@@ -354,17 +337,13 @@ static NSString *cellID = @"Details";
     }
     
     // decelerate 减速
-    if (decelerate) {
-        // 减速
-        //        NSLog(@"停止滚动3-yes:%f", scrollView.contentOffset.y);
-    }else {
-        // 停止
-        //        NSLog(@"停止滚动3-no:%f", scrollView.contentOffset.y);
-        // 修复位置
+    if (!decelerate) {
+        // 停止，修复位置
         [self updateTableViewContentOffSet];
     }
 }
 
+#pragma mark 将要开始拖动
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     // 将要拖动
     if (scrollView == self.scrollView) {
@@ -374,22 +353,27 @@ static NSString *cellID = @"Details";
     }
 }
 
+#pragma mark 刷新控件添加KVO监听
+- (void)addObserversToObj:(MJRefreshComponent *)refreshComponent
+{
+    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+    [refreshComponent.scrollView addObserver:refreshComponent forKeyPath:MJRefreshKeyPathContentOffset options:options context:nil];
+}
+
+#pragma mark 刷新控件移除KVO监听
+- (void)removeObserversWithObj:(MJRefreshComponent *)refreshComponent
+{
+    [refreshComponent.superview removeObserver:refreshComponent forKeyPath:MJRefreshKeyPathContentOffset];
+}
+
 #pragma mark 设置scrollView和tableView联动
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-    //    // y < 0 时，只需要table随scroll滚动即可
-    //    // 修复下拉刷新功能
-    //    if (scrollView.contentOffset.y < 0 && scrollView == self.scrollView) {
-    //        [self scrollViewContentOffsetDidChange];
-    //    }
-    
     if (scrollView == self.scrollView) {
-        NSLog(@"正在滚动-scroll(>0):%f", scrollView.contentOffset.y);
         self.tableView.delegate = nil;
         [self.tableView setContentOffset:scrollView.contentOffset];
         self.tableView.delegate = self;
     }else if (scrollView == self.tableView && !self.scrollView.isDragging) {
-        NSLog(@"正在滚动-table(>0):%f", scrollView.contentOffset.y);
         self.scrollView.delegate = nil;
         [self.scrollView setContentOffset:scrollView.contentOffset];
         self.scrollView.delegate = self;
